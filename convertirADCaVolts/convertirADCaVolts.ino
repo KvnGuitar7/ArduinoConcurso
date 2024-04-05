@@ -7,7 +7,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int adc = analogRead(A1); // Guarda el valor de ADC en el pin A1 y se declara la variable como tipo entero
-  int volt = adc * 5 / 1023; //Esta operación convierte el valor que se recibe en el ADC y lo convierte al voltaje se declara la variable como tipo entero
+  int volt = adc * 5 / 1024; //Esta operación convierte el valor que se recibe en el ADC y lo convierte al voltaje se declara la variable como tipo entero
 
   Serial.print("El valor del ADC es: ");
   Serial.print(adc);
